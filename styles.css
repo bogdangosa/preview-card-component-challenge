@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    background-color: #0a0c1b;
+    color:#fff;
+}
+
+.Card{
+    display: flex;
+    position: absolute;
+    background-color: #1c1938;
+    width: 80%;
+    height: 60%;
+    top:20%;
+    left: 10%;
+    border-radius: 1rem;
+}
+
+.Content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5rem 5rem 5rem 5rem;
+    width: 40%;
+}
+
+.Title{
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+.Title span{
+    color:#a256d0;
+}
+
+.Text{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+}
+
+.StatsList{
+    display: flex;
+    justify-content: space-between;
+}
+.StatsList h2{
+    margin-bottom: 0.2rem;
+}
+.StatsList p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+}
+
+
+.Image{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,rgb(91, 50, 116,0.7),rgb(91, 50, 116,0.7)),url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+    color: #a256d0;
+}
+
+
+@media(max-width:700px){
+    body{
+        position: relative;
+        height: 120vh;
+
+    }
+    .Card{
+        flex-direction: column-reverse;
+        height: 100vh;
+        top: 10vh;
+        left: 10%;
+        
+
+    }
+
+    .Image{
+        height: 30%;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .Content{
+        text-align: center;
+        height: 70%;
+        width: 80%;
+        padding: 0 10%;
+        justify-content: space-around;
+    }
+    .Title{
+        font-size: 2rem;
+    }
+
+    .StatsList{
+        justify-content: space-around;
+    }
+    .attribution{
+        padding: 0 10%;
+        width: 80%;
+        bottom: 0.5rem;
+    }
+
+}
